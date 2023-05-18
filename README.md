@@ -1,6 +1,5 @@
 # Learning-git-actions
-Learning from Youtube: GitHub Actions Workflow + Docker Build &amp; Push (Beginner Tutorial)
-[GitHub Actions Workflow + Docker Build & Push (Demo + Giải Thích)](https://www.youtube.com/watch?v=33Ttv3taz7I&t=1s&ab_channel=FullstacKAGE)
+Learning from Youtube: [GitHub Actions Workflow + Docker Build & Push (Demo + Giải Thích)](https://www.youtube.com/watch?v=33Ttv3taz7I&t=1s&ab_channel=FullstacKAGE)
 
 - **Github Actions**
     - là chức năng cho phép chúng ta tạo `workflows` vòng đời phát triển phần mềm cho dự án trực tiếp trên Github repository
@@ -37,7 +36,7 @@ Learning from Youtube: GitHub Actions Workflow + Docker Build &amp; Push (Beginn
         
         ![Untitled](static/Untitled%202.png)
         
-    - Quay trở lại github với repo: Learning-github-actions ⇒ Settings ⇒ Secrets and variables ⇒ Actions ⇒ New repository secrets ⇒ Tạo secret là *DOCKERHUB_USERNAME / sonlt173346hust* và *DOCKERHUB_ACCESS_TOKEN / <dockerhub-token>*
+    - Quay trở lại github với repo: Learning-github-actions ⇒ Settings ⇒ Secrets and variables ⇒ Actions ⇒ New repository secrets ⇒ Tạo secret là *DOCKERHUB_USERNAME / sonlt177346* và *DOCKERHUB_ACCESS_TOKEN / <dockerhub-token>*
         
         ![Untitled](static/Untitled%203.png)
         
