@@ -1,5 +1,5 @@
-# Bài 1: GitHub Actions Workflow + Docker Build & Push (Beginner Tutorial)
-
+# Learning-git-actions
+Learning from Youtube: GitHub Actions Workflow + Docker Build &amp; Push (Beginner Tutorial)
 [GitHub Actions Workflow + Docker Build & Push (Demo + Giải Thích)](https://www.youtube.com/watch?v=33Ttv3taz7I&t=1s&ab_channel=FullstacKAGE)
 
 - **Github Actions**
@@ -24,22 +24,22 @@
     
     - Push lên nhánh main github để xem kết quả
         
-        ![Untitled](Ba%CC%80i%201%20GitHub%20Actions%20Workflow%20+%20Docker%20Build%20&%20Pu%2030d0e884968f4870bf2bc6ad6e8a6076/Untitled.png)
+        ![Untitled](static/Untitled.png)
         
         - Khởi tạo thành công workflow có tên là: *learning-github-actions.* Bấm vào workflow này, ta sẽ thấy job *docker*
         
-        ![Untitled](Ba%CC%80i%201%20GitHub%20Actions%20Workflow%20+%20Docker%20Build%20&%20Pu%2030d0e884968f4870bf2bc6ad6e8a6076/Untitled%201.png)
+        ![Untitled](static/Untitled%201.png)
         
         - Quan sát thấy, hệ điều hành được sử dụng là *Ubuntu 22.04*
         - Trong step C*heckout*: git repo đã được tải về
 - **Bước 2: Tạo Personal Access Token trên Docker Hub**
     - Truy cập vào docker hub ⇒ Account Settings ⇒ Security ⇒ Create Access Token: dckr_pat_ZspMYyLB8Qmbfsvm5fEUYEtr1Wo
         
-        ![Untitled](Ba%CC%80i%201%20GitHub%20Actions%20Workflow%20+%20Docker%20Build%20&%20Pu%2030d0e884968f4870bf2bc6ad6e8a6076/Untitled%202.png)
+        ![Untitled](static/Untitled%202.png)
         
     - Quay trở lại github với repo: Learning-github-actions ⇒ Settings ⇒ Secrets and variables ⇒ Actions ⇒ New repository secrets ⇒ Tạo secret là *DOCKERHUB_USERNAME / sonlt173346hust* và *DOCKERHUB_ACCESS_TOKEN / <dockerhub-token>*
         
-        ![Untitled](Ba%CC%80i%201%20GitHub%20Actions%20Workflow%20+%20Docker%20Build%20&%20Pu%2030d0e884968f4870bf2bc6ad6e8a6076/Untitled%203.png)
+        ![Untitled](static/Untitled%203.png)
         
     - Quay lại VS Code, config file *build.yaml,* Thêm step với *name* là *Login Docker Hub*
         
@@ -64,9 +64,9 @@
         
     - Push lên github và xem kết quả (Login thành công
         
-        ![Untitled](Ba%CC%80i%201%20GitHub%20Actions%20Workflow%20+%20Docker%20Build%20&%20Pu%2030d0e884968f4870bf2bc6ad6e8a6076/Untitled%204.png)
+        ![Untitled](static/Untitled%204.png)
         
-        ![Untitled](Ba%CC%80i%201%20GitHub%20Actions%20Workflow%20+%20Docker%20Build%20&%20Pu%2030d0e884968f4870bf2bc6ad6e8a6076/Untitled%205.png)
+        ![Untitled](static/Untitled%205.png)
         
 - **Bước 3,4,5,6 : Setup Docker Buildx, Build và Push Docker Image, Verify**
     - **Setup** **Docker Buildx**: là tiện ích CLI mở rộng Docker command để tăng hiệu năng của Docker command.
@@ -115,10 +115,10 @@
         
     - Cùng xem kết quả:
         
-        ![Untitled](Ba%CC%80i%201%20GitHub%20Actions%20Workflow%20+%20Docker%20Build%20&%20Pu%2030d0e884968f4870bf2bc6ad6e8a6076/Untitled%206.png)
+        ![Untitled](static/Untitled%206.png)
         
-        ![Untitled](Ba%CC%80i%201%20GitHub%20Actions%20Workflow%20+%20Docker%20Build%20&%20Pu%2030d0e884968f4870bf2bc6ad6e8a6076/Untitled%207.png)
+        ![Untitled](static/Untitled%207.png)
         
-        ![Untitled](Ba%CC%80i%201%20GitHub%20Actions%20Workflow%20+%20Docker%20Build%20&%20Pu%2030d0e884968f4870bf2bc6ad6e8a6076/Untitled%208.png)
+        ![Untitled](static/Untitled%208.png)
         
         ⇒ Đóng gói docker và đẩy lên dockerhub thành công
